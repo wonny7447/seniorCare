@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindfamilyActivity">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="이름"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="백지원" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="성별"
+                android:textSize="9pt" />
+
+
+            <RadioGroup
+                android:id="@+id/sex_Radio_Group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sex_male"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="남성" />
+
+                <RadioButton
+                    android:id="@+id/sex_female"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="여성" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="이메일"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="20"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:text="검색" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textSize="9pt"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/add_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="가족 등록" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

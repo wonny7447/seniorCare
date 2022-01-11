@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_protector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="51dp"
+            android:layout_height="51dp" />
+
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="600dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <Space
+                android:layout_width="364dp"
+                android:layout_height="51dp" />
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="76dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="36dp"
+                    android:text="이름"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:ems="10"
+                    android:textSize="7pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="76dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="36dp"
+                    android:text="생년월일"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/birth"
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:ems="10"
+                    android:textSize="7pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="76dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="36dp"
+                    android:text="성별"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:ems="10"
+                    android:textSize="7pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="72dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="36dp"
+                    android:text="키"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="cm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="72dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="36dp"
+                    android:text="몸무게"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="kg" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menubuttons"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/button_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FF0000" />
+
+        <Button
+            android:id="@+id/button_daylog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FF0000" />
+
+        <Button
+            android:id="@+id/button_senior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FF0000" />
+
+        <Button
+            android:id="@+id/button_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FF0000" />
+    </LinearLayout>
+
+</LinearLayout>

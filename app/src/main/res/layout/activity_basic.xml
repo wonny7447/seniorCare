@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicActivity">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="생년월일"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="성별"
+                android:textSize="9pt" />
+
+
+            <RadioGroup
+                android:id="@+id/sex_Radio_Group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sex_male"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="남성" />
+
+                <RadioButton
+                    android:id="@+id/sex_female"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="여성" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="키"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:text="몸무게"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="kg" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:text="등록" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

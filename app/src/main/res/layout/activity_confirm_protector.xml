@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_protector"
+    tools:context=".ConfirmProtectorActivity">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="269dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/time_RG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="62dp"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/time_1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="아침" />
+
+            <RadioButton
+                android:id="@+id/time_2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="점심" />
+
+            <RadioButton
+                android:id="@+id/time_3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="저녁" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noresult"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textSize="7pt" />
+
+    <LinearLayout
+        android:id="@+id/first_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/first_question"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="불편한 곳은 없으신가요?"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/first_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="7pt" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/second_question"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="식사는 하셨나요?"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/second_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="7pt" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/third_question"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="외출 일정이 있으신가요?"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/third_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="7pt" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourth_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/fourth_question"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="기분은 어떠신가요?"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/fourth_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="7pt" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifth_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/fifth_question"
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="가족들에게 남기고 싶은 말"
+            android:textSize="7pt" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifth_answer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/fifth_answer"
+            android:layout_width="247dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="7pt" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menubuttons"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/button_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF0000"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_daylog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF0000"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_senior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF0000"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FF0000"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
